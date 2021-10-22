@@ -1,0 +1,336 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --very-dark-blue: hsl(212, 27%, 19%);
+    --very-dark-greyish-blue: hsl(213, 9%, 39%);
+    --dark-text: hsl(212, 27%, 19%);
+    --soft-red: hsl(7, 99%, 70%, .2);
+    --soft-yellow: hsl(51, 100%, 49%, .3);
+    --graphic-design-text: hsl(167, 40%, 24%);
+    --photography-text: hsl(198, 62%, 26%);
+    --client-text: hsl(210, 4%, 67%);
+    --footer: hsl(168, 34%, 41%, .5);
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Fraunces', serif;
+    scroll-behavior: smooth;
+}
+
+/* ================= */
+/* HEADER ========== */
+/* ================= */
+
+header {
+    background-image: url("../images/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 550px;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding:  2rem;
+    top: 0;
+
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    background: var(--white);
+    text-align: center;
+    padding: 3em 4.95em;
+    display: none;
+}
+
+.nav-links:before {
+    content: "";
+    position: absolute;
+    top: -8%;
+    left: 90.3%;
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid var(--white);
+}
+
+.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Barlow', sans-serif;
+    color: var(--very-dark-greyish-blue);
+    padding: .75em 0;
+}
+
+.contact {
+    background: var(--soft-yellow);
+    border-radius: 50px;
+    padding: 1em 2em;
+    /* margin-top: 1em; */
+}
+
+.content {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.page-title {
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0
+}
+
+.arrow {
+    margin-top: 3rem;
+}
+
+/* ================= */
+/* MAIN ============ */
+/* ================= */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    width: 100%;
+}
+
+.img-container-projects {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+}
+
+.about-img {
+    background-image: url("../images/mobile/image-transform.jpg");
+}
+
+.services-img {
+    background-image: url("../images/mobile/image-stand-out.jpg");
+}
+
+.design {
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+}
+
+.photography {
+    background-image: url("../images/mobile/image-photography.jpg");
+}
+
+/* ================= */
+/* COPY ============ */
+
+.copy {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.copy-title {
+    font-size: 2rem;
+    color: var(--dark-text);
+}
+
+.copy-body {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    color: var(--very-dark-greyish-blue);
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+.learn-more {
+    font-size: 20px;
+    color: var(--dark-text);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 .5em;
+    margin-bottom: 1.5rem;
+    border-bottom: solid 8px var(--soft-yellow);
+    border-radius: 3px;
+    display: inline-block;
+    height: 0.95em;
+}
+
+/* ================= */
+/* PROJECTS-COPY === */
+
+.projects-copy {
+    margin-top: 100%;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.projects-body {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    padding: 0 1.15rem 2rem 1.15rem;
+}
+
+.design {
+    color: var(--graphic-design-text);
+}
+
+.photography {
+    color: var(--photography-text);
+}
+
+
+/* ================= */
+/* TESTIMONIALS ==== */
+
+.testimonials-title {
+    background: var(--white);
+    color: var(--client-text);
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 3em 0;
+}
+
+.client {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    color: var(--very-dark-blue);
+    line-height: 2em;
+    letter-spacing: 1px;;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.client-img {
+    border-radius: 50%;;
+}
+
+.client-p {
+    padding: .1em 0;
+}
+
+.author {
+    font-size: 1.5rem;
+    color: var(--dark-text);
+    font-family: 'Fraunces', serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.clients-title {
+    margin: 0;
+    text-transform: capitalize;
+    color: var(--client-text);
+    padding-bottom: 7em;
+}
+
+/* ================= */
+/* GALLERY ========= */
+/* ================= */
+
+.gallery {
+    display: grid;
+    grid-template: repeat(2, 25vh) / repeat(2, 50vw);
+    grid-template-areas: 
+        "gallery-1 gallery-2"
+        "gallery-3 gallery-4";
+}
+
+.container-1 {
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: gallery-1;
+}
+
+.container-2 {
+    background-image: url("../images/desktop/image-gallery-orange.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: gallery-2;
+}
+
+.container-3 {
+    background-image: url("../images/desktop/image-gallery-cone.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: gallery-3;
+}
+
+.container-4 {
+    background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: gallery-4;
+}
+
+/* ================= */
+/* FOOTER ========== */
+/* ================= */
+
+.filter-green {
+    filter: brightness(0) saturate(100%) invert(28%) sepia(56%) saturate(386%) hue-rotate(116deg) brightness(88%) contrast(91%);
+}
+
+
+footer {
+    background: var(--footer);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.footer-logo {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+
+.footer-links {
+    font-family: 'Barlow', sans-serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: white;
+}
+
+.f-link {
+    padding: 0 1em;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.footer-social {
+    padding: 5rem 0 0 0;
+}
+
+.social-img {
+    padding: 0 .75rem;;
+}
+
+
