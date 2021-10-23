@@ -1,5 +1,5 @@
 const menuBtn = document.getElementById("menu-btn")
-const dropDown = document.getElementById("drop-down")
+const dropDown = document.querySelector(".nav-links")
 const pageLinks = document.querySelectorAll(".nav-link")
 let clickCount = 0
 
@@ -11,7 +11,9 @@ const showMenue = () => {
 }
 
 const hideNav = () => {
-    dropDown.style.display = "none"
+    clickCount = 0
+    const menueDisplay = window.getComputedStyle(menuBtn, null).display
+    menueDisplay === "block" ? dropDown.style.display = "none" : dropDown
 }
 
 const showNav = () => { 
